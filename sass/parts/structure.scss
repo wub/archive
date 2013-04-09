@@ -1,0 +1,180 @@
+/* 
+-----------------------------------------------------------
+	
+	INTERNET ARCHIVE
+	archive.org
+
+-----------------------------------------------------------
+*/
+
+$border: 1px dotted #ccc;
+
+body, html {
+	background: url(XXX../img/background.png);
+}
+
+/*
+-----------------------------------------------------------
+	H E A D E R  /  L O G O  /  N A V
+-----------------------------------------------------------
+*/
+
+.header-wrapper {
+	background: #fff;
+}
+
+.main-header {
+	padding: 20px 0;
+	border-bottom: $border;
+
+	.main-logo {
+		width: 64px;
+		height: 64px;
+		color: #444;
+		overflow: hidden;
+		display: inline-block;
+
+		// background: url(../img/logo.png) no-repeat;*/
+	}
+}
+
+
+.main-nav {
+	display: inline-block;
+	margin: 0 0 0 25px;
+
+	a {
+		display: inline-block;
+		text-transform: uppercase;
+		color: #555;
+		padding: 5px 10px;
+		font-family: 'Proxima Nova';
+		// font-weight: bold;
+		font-size: 15px;
+	}
+}
+
+.donate {
+	float: right;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 3px;
+	font-weight: bold;
+	background: lighten($mainColor, 7%);
+	color: #fff;
+
+	&:hover {
+		color: #fff;
+		background: $mainColor;
+	}
+}
+
+.secondary-nav {
+	display: inline-block;
+	padding: 5px 0 9px 0;
+	margin-left: -20px;
+
+	a {
+		display: block;
+		float: left;
+		padding: 11px 22px 10px 21px;
+		font-size: 24px;
+		font-weight: bold;
+		color: $txtColor;
+
+		&:hover {
+			color: lighten($txtColor, 20%);
+
+			em {
+				color: $txtColor;
+			}
+		}
+
+		em {
+			display: block;
+			padding-top: 2px;
+			font-size: 14px;
+			font-weight: normal;
+		}
+	}
+}
+
+.tertiary-nav {
+	margin-left: 0px;
+	padding: 12px 0 9px 0;
+	border-top: $border;
+
+	a {
+		display: inline-block;
+		color: #555;
+		padding: 0 14px;
+		border-right: 1px dotted #aaa;
+		font-size: 18px;
+
+		&:first-child {
+			padding-left: 3px;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+.intro {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border: $border;
+	border-style: dotted none;
+	// text-align: center;
+
+	.header {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.subheader {
+		margin-top: 0;
+		font-we-topight: normal;
+		font-size: 26px;
+		line-height: 1.2;
+	}
+
+	.lead-text {
+		font-size: 18px
+	}
+}
+
+.search {
+	padding-top: 30px;
+
+	input[type="text"] {
+		height: auto;
+		font-weight: normal;
+		font-size: 24px;
+	}
+}
+
+.blocks {
+	padding-top: 20px;
+
+	.block {
+		h1 {
+			float: left;
+			font-size: 32px;
+		}
+	}
+
+	.block-meta {
+		float: right;
+		text-align: right;
+		margin: 17px 6px 5px 0;
+		font-size: 18px;
+		color: #666;
+
+		div {
+			color: #222;
+		}
+	}
+}
+
